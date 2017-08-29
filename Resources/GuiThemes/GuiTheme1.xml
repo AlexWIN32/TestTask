@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<gui>
+	<textures>
+		<texture name="GuiTheme1" fileName="GuiTheme1.png" size="(256,256)"/>
+	</textures>
+	<fonts>
+		<font name="Arial16.fnt"/>
+	</fonts>
+	<fontColors>
+		<default>(0,0,0,1)</default>
+		<disabled>(0.65,0.65,0.65,1)</disabled>
+		<selected>(1,1,1,1)</selected>
+	</fontColors>	
+	<controls>
+		<HorisontalScrollBar>
+			<line texture="GuiTheme1" upperLeft="(18,0)" screenSize="(1,27)"/>
+			<disabledLine texture="GuiTheme1" upperLeft="(0,28)" screenSize="(1,27)"/>
+			<params>
+				<rollerSize>(8,27)</rollerSize>
+			</params>
+		</HorisontalScrollBar>
+		<VerticalScrollBar>
+			<line texture="GuiTheme1" upperLeft="(21,18)" screenSize="(27,1)"/>
+			<disabledLine texture="GuiTheme1" upperLeft="(3,44)" screenSize="(27,1)"/>
+			<params>
+				<rollerSize>(27,8)</rollerSize>
+			</params>
+		</VerticalScrollBar>
+		<InnerHorisontalScrollBar>
+			<params>
+				<bgArea>Area1</bgArea>
+				<bgDiasbledArea>Area7</bgDiasbledArea>
+				<rollerSize>(8,27)</rollerSize>
+			</params>
+		</InnerHorisontalScrollBar>
+		<InnerVerticalScrollBar>
+			<params>
+				<bgArea>Area1</bgArea>
+				<bgDiasbledArea>Area7</bgDiasbledArea>
+				<rollerSize>(27,8)</rollerSize>
+			</params>
+		</InnerVerticalScrollBar>
+		<CheckBox>
+			<unchecked texture="GuiTheme1" upperLeft="(21,21)" screenSize="(13,11)"/>
+			<checked texture="GuiTheme1" upperLeft="(34,21)" screenSize="(13,11)"/>
+			<uncheckedDisabled texture="GuiTheme1" upperLeft="(21,32)" screenSize="(13,11)"/>
+			<checkedDisabled texture="GuiTheme1" upperLeft="(34,32)" screenSize="(13,11)"/>
+		</CheckBox>
+		<RadioButton>
+			<selected texture="GuiTheme1" upperLeft="(59,0)" screenSize="(11,11)"/>
+			<unselected texture="GuiTheme1" upperLeft="(48,0)" screenSize="(11,11)"/>
+			<selectedDisabled texture="GuiTheme1" upperLeft="(81,0)" screenSize="(11,11)"/>
+			<unselectedDisabled texture="GuiTheme1" upperLeft="(70,0)" screenSize="(11,11)"/>
+		</RadioButton>
+		<Area1>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(48,11)" screenSize="(2,2)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(53,11)" screenSize="(2,2)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(48,16)" screenSize="(2,2)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(53,16)" screenSize="(2,2)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(51,11)" screenSize="(1,2)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(51,16)" screenSize="(1,2)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(48,14)" screenSize="(2,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(53,14)" screenSize="(2,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(51,14)" screenSize="(1,1)"/>
+		</Area1>
+		<Area2>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(55,11)" screenSize="(3,3)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(61,11)" screenSize="(3,3)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(55,17)" screenSize="(3,3)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(61,17)" screenSize="(3,3)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(59,11)" screenSize="(1,3)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(59,17)" screenSize="(1,3)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(55,15)" screenSize="(3,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(61,15)" screenSize="(3,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(59,15)" screenSize="(1,1)"/>
+		</Area2>
+		<Area3>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(64,11)" screenSize="(3,3)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(70,11)" screenSize="(3,3)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(64,17)" screenSize="(3,3)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(70,17)" screenSize="(3,3)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(68,11)" screenSize="(1,3)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(68,17)" screenSize="(1,3)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(64,15)" screenSize="(3,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(70,15)" screenSize="(3,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(68,15)" screenSize="(1,1)"/>
+		</Area3>
+		<Area4>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(48,19)" screenSize="(2,2)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(53,19)" screenSize="(2,2)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(48,24)" screenSize="(2,2)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(53,24)" screenSize="(2,2)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(51,19)" screenSize="(1,2)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(51,24)" screenSize="(1,2)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(48,22)" screenSize="(2,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(53,22)" screenSize="(2,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(51,22)" screenSize="(1,1)"/>
+		</Area4>
+		<Area5>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(48,27)" screenSize="(2,2)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(53,27)" screenSize="(2,2)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(48,32)" screenSize="(2,2)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(53,32)" screenSize="(2,2)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(51,27)" screenSize="(1,2)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(51,32)" screenSize="(1,2)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(48,30)" screenSize="(2,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(53,30)" screenSize="(2,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(51,30)" screenSize="(1,1)"/>
+		</Area5>
+		<Area6>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(73,11)" screenSize="(3,3)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(79,11)" screenSize="(3,3)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(73,17)" screenSize="(3,3)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(79,17)" screenSize="(3,3)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(77,11)" screenSize="(1,3)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(77,17)" screenSize="(1,3)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(73,15)" screenSize="(3,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(79,15)" screenSize="(3,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(77,15)" screenSize="(1,1)"/>
+		</Area6>
+		<Area7>
+			<upperLeftCorner texture="GuiTheme1" upperLeft="(48,35)" screenSize="(2,2)"/>
+			<upperRightCorner texture="GuiTheme1" upperLeft="(53,35)" screenSize="(2,2)"/>
+			<loverLeftCorner texture="GuiTheme1" upperLeft="(48,40)" screenSize="(2,2)"/>
+			<loverRightCorner texture="GuiTheme1" upperLeft="(53,40)" screenSize="(2,2)"/>
+			<topBorder texture="GuiTheme1" upperLeft="(51,35)" screenSize="(1,2)"/>
+			<bottomBorder texture="GuiTheme1" upperLeft="(51,40)" screenSize="(1,2)"/>
+			<leftBorder texture="GuiTheme1" upperLeft="(48,38)" screenSize="(2,1)"/>
+			<rightBorder texture="GuiTheme1" upperLeft="(53,38)" screenSize="(2,1)"/>
+			<spaceArea texture="GuiTheme1" upperLeft="(51,38)" screenSize="(1,1)"/>
+		</Area7>
+		<Button>
+			<params>
+				<idleArea>Area2</idleArea>
+				<downedArea>Area3</downedArea>
+				<disabledAred>Area6</disabledAred>
+			</params>
+		</Button>
+		<ComboBox>
+			<params>
+				<valueArea>Area1</valueArea>
+				<itemsArea>Area1</itemsArea>
+				<disabledAred>Area7</disabledAred>
+				<selectedItemArea>Area4</selectedItemArea>
+				<emptyValueWidth>54</emptyValueWidth>
+				<showItemsButtonWidth>32</showItemsButtonWidth>
+				<maxViewedItems>10</maxViewedItems>
+			</params>			
+		</ComboBox>
+		<ProgressBar>
+			<params>
+				<bgArea>Area1</bgArea>
+				<progressArea>Area4</progressArea>
+			</params>
+		</ProgressBar>
+		<TextBox>
+			<cursorLine texture="GuiTheme1" upperLeft="(56,22)" screenSize="(1,1)"/>
+			<params>
+				<valueArea>Area5</valueArea>
+				<disabledAred>Area7</disabledAred>
+			</params>
+		</TextBox>
+	</controls>
+</gui>
