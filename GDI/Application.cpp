@@ -82,6 +82,8 @@ void Application::CheckObstaclesCollision()
 
             circleDir = contactNormal;
 
+            circleSpeed = Math::Rand(1.0f, 10.0f);
+
             collidedObstacles.push_back(&obstacle);
         }
     }
