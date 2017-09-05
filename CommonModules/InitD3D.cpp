@@ -5,44 +5,8 @@
     See "LICENSE" or "http://copyfree.org/content/standard/licenses/mit/license.txt".
 *******************************************************************************/
 
-#include <InitFunctions.h>
+#include <InitD3D.h>
 #include <Utils/AutoCOM.h>
-
-HWND InitWindow(HINSTANCE Instance, LONG ClientWidth, LONG ClientHeight, const std::wstring &Caption, MainWndProc WndProc) throw (Exception)
-{
-	WNDCLASS wc;
-	wc.style = CS_HREDRAW | CS_VREDRAW;
-	wc.lpfnWndProc = WndProc;
-	wc.cbClsExtra = 0;
-	wc.cbWndExtra = 0;
-	wc.hInstance = Instance;
-	wc.hIcon = LoadIcon(0, IDI_APPLICATION);
-	wc.hCursor = LoadCursor(0, IDC_ARROW);
-	wc.hbrBackground = (HBRUSH)GetStockObject(NULL_BRUSH);
-	wc.lpszMenuName = 0;
-	wc.lpszClassName = L"D3DWndClassName";
-
-	if (!RegisterClass(&wc))
-		throw Exception("RegisterClass Failed");
-
-    DWORD style = (WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX);
-
-	// Compute window rectangle dimensions based on requested client area dimensions.
-	RECT R = { 0, 0, ClientWidth, ClientHeight };
-	AdjustWindowRect(&R, style, false);
-	int width = R.right - R.left;
-	int height = R.bottom - R.top;
-
-	HWND mhMainWnd = CreateWindow(L"D3DWndClassName", Caption.c_str(),
-		style, CW_USEDEFAULT, CW_USEDEFAULT, width, height, 0, 0, Instance, 0);
-	if (!mhMainWnd)
-		throw Exception("CreateWindow Failed");
-
-	ShowWindow(mhMainWnd, SW_SHOW);
-	UpdateWindow(mhMainWnd);
-
-	return mhMainWnd;
-}
 
 D3DData InitD3D(const D3DParams &Params) throw (Exception)
 {
@@ -160,4 +124,3 @@ D3DData InitD3D(const D3DParams &Params) throw (Exception)
 
 	return data;
 }
-

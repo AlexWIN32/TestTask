@@ -10,10 +10,6 @@
 #include <D3DHeaders.h>
 #include <Exception.h>
 
-typedef LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
-
-HWND InitWindow(HINSTANCE Instance, LONG ClientWidth, LONG ClientHeight, const std::wstring &Caption, MainWndProc WndProc) throw (Exception);
-
 struct D3DParams
 {
     LONG clientWidth = 0;

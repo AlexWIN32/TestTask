@@ -16,7 +16,8 @@
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="CommonParams.cpp" />
     <ClCompile Include="DeviceKeeper.cpp" />
-    <ClCompile Include="InitFunctions.cpp" />
+    <ClCompile Include="InitD3D.cpp" />
+    <ClCompile Include="InitWindow.cpp" />
     <ClCompile Include="Matrix3x3.cpp" />
     <ClCompile Include="Matrix4x4.cpp" />
     <ClCompile Include="Meshes.cpp" />

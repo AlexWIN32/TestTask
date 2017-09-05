@@ -6,7 +6,8 @@
 *******************************************************************************/
 
 #include <D3DHeaders.h>
-#include <InitFunctions.h>
+#include <InitWindow.h>
+#include <InitD3D.h>
 #include <DeviceKeeper.h>
 #include <GUI/Manager.h>
 #include <DirectInput.h>
@@ -77,7 +78,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline,
         SamplerStates::Manager::ReleaseInstance();
         DeviceKeeper::ReleaseResources();
 
-        MessageBoxA(0, ex.What().c_str(), 0, 0);
+        if(ex.What() != "")
+            MessageBoxA(0, ex.What().c_str(), 0, 0);
+        else
+            MessageBoxW(0, ex.WhatW().c_str(), 0, 0);
+
         return 0;
     }
 

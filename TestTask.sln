@@ -21,6 +21,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI", "GUI\GUI.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Xml", "Xml\Xml.vcxproj", "{DB6BD754-296D-423B-A5F1-FD0A540689D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDI", "GDI\GDI.vcxproj", "{E7E49E1C-F68A-4690-A6DA-1E35330A2087}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8E0EA883-15F9-4AA4-961E-DBB5321F6D0A} = {8E0EA883-15F9-4AA4-961E-DBB5321F6D0A}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -47,6 +52,10 @@ Global
 		{DB6BD754-296D-423B-A5F1-FD0A540689D8}.Debug|Win32.Build.0 = Debug|Win32
 		{DB6BD754-296D-423B-A5F1-FD0A540689D8}.Release|Win32.ActiveCfg = Release|Win32
 		{DB6BD754-296D-423B-A5F1-FD0A540689D8}.Release|Win32.Build.0 = Release|Win32
+		{E7E49E1C-F68A-4690-A6DA-1E35330A2087}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7E49E1C-F68A-4690-A6DA-1E35330A2087}.Debug|Win32.Build.0 = Debug|Win32
+		{E7E49E1C-F68A-4690-A6DA-1E35330A2087}.Release|Win32.ActiveCfg = Release|Win32
+		{E7E49E1C-F68A-4690-A6DA-1E35330A2087}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
