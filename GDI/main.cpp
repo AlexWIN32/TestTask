@@ -48,4 +48,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR pScmdline,
             DispatchMessage(&msg);
         }else
             app.Invalidate();
+
+    return (int)msg.wParam;
 }
